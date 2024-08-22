@@ -1,9 +1,9 @@
-import { HomeRoutes } from './HomeRoutes';
-import { AuthRoutes } from './AuthRoutes';
+import { homeRoutes } from './HomeRoutes';
+import { authRoutes } from './AuthRoutes';
 
 const routes = [
-  ...HomeRoutes,
-  ...AuthRoutes,
+  ...homeRoutes,
+  ...authRoutes,
   {
     path: '*',
     element: <h1>404 Not Found</h1>,

@@ -1,8 +1,13 @@
 import { HomePage } from '../pages/HomePage';
+import { MainLayout } from '../layouts/MainLayout/MainLayout.jsx';
 
-export const HomeRoutes = [
+export const homeRoutes = [
   {
     path: '/',
-    element: <HomePage />,
+    element: (
+      <MainLayout>
+        <HomePage />
+      </MainLayout>
+    ),
   },
 ];

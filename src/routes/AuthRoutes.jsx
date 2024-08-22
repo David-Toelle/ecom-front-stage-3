@@ -1,13 +1,22 @@
 import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
+import { MainLayout } from '../layouts/MainLayout/MainLayout';
 
-export const AuthRoutes = [
+export const authRoutes = [
   {
     path: '/login',
-    element: <LoginPage />,
+    element: (
+      <MainLayout>
+        <LoginPage />
+      </MainLayout>
+    ),
   },
   {
     path: '/register',
-    element: <RegisterPage />,
+    element: (
+      <MainLayout>
+        <RegisterPage />
+      </MainLayout>
+    ),
   },
 ];
